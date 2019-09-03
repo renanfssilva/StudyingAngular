@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 <<<<<<< HEAD
 
@@ -8,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 >>>>>>> parent of f7dad96... Empty project using Bootstrap
 =======
 >>>>>>> parent of befc965... First exercise - learning how to use components
+=======
+import { FormsModule } from '@angular/forms';
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
 
 import { AppComponent } from './app.component';
 
@@ -16,6 +20,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+<<<<<<< HEAD
 <<<<<<< HEAD
     BrowserModule,
 <<<<<<< HEAD
@@ -26,6 +31,10 @@ import { AppComponent } from './app.component';
 =======
     BrowserModule
 >>>>>>> parent of befc965... First exercise - learning how to use components
+=======
+    BrowserModule,
+    FormsModule
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,14 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "my-first-app": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "root": "",
       "sourceRoot": "src",
@@ -12,11 +16,16 @@
       "prefix": "app",
       "schematics": {},
 =======
+=======
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+<<<<<<< HEAD
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
+=======
 >>>>>>> parent of f7dad96... Empty project using Bootstrap
       "architect": {
         "build": {
@@ -27,7 +36,12 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "tsConfig": "src/tsconfig.app.json",
+=======
+            "tsConfig": "tsconfig.app.json",
+            "aot": false,
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
 =======
             "tsConfig": "tsconfig.app.json",
             "aot": false,
@@ -38,7 +52,10 @@
             ],
             "styles": [
 <<<<<<< HEAD
+<<<<<<< HEAD
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+=======
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
 =======
 >>>>>>> parent of f7dad96... Empty project using Bootstrap
               "src/styles.css"
@@ -62,8 +79,11 @@
               "extractLicenses": true,
               "vendorChunk": false,
 <<<<<<< HEAD
+<<<<<<< HEAD
               "buildOptimizer": true
 =======
+=======
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -77,6 +97,7 @@
                   "maximumError": "10kb"
                 }
               ]
+<<<<<<< HEAD
 >>>>>>> parent of f7dad96... Empty project using Bootstrap
             }
           }
@@ -312,10 +333,78 @@
                      "devServerTarget": "my-first-app:serve:production"
                   }
                }
+=======
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
             }
-         }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "my-first-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "my-first-app:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "my-first-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "my-first-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "my-first-app:serve:production"
+            }
+          }
+        }
       }
+<<<<<<< HEAD
    },
    "defaultProject": "my-first-app"
 }
 >>>>>>> parent of befc965... First exercise - learning how to use components
+=======
+    }},
+  "defaultProject": "my-first-app"
+}
+>>>>>>> parent of f7dad96... Empty project using Bootstrap
